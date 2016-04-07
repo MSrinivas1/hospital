@@ -15,6 +15,18 @@ import org.springframework.web.servlet.view.JstlView;
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 	
+    @Override
+    public void addResourceHandlers(final ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/font/**").addResourceLocations("/font/");
+        registry.addResourceHandler("/ui/css/**").addResourceLocations("/ui/css/");
+        registry.addResourceHandler("/ui/img/**").addResourceLocations("/ui/img/");
+        registry.addResourceHandler("/ui/js/**").addResourceLocations("/ui/js/");
+        registry.addResourceHandler("/ui/template/**").addResourceLocations("/ui/template/");
+        
+        registry.addResourceHandler("/*").addResourceLocations("/");
+        super.addResourceHandlers(registry);
+    }
+	
     @Bean
     public InternalResourceViewResolver jspViewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();

@@ -5,8 +5,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="ui/css/index.css"/>
+<link rel="shortcut icon" type="image/x-icon" href="ui/images/favicon.ico"/>
 </head>
-<body>
+<body ng-app="hosp">
 
 </body>
+<script type = "" src = "ui/js/lib/angular.min.js"></script>
+<script type = "" src = "ui/js/lib/ui-bootstrap-tpls-1.3.1.min.js"></script>
+<script type = "" src = "ui/js/lib/jquery-2.2.3.min.js"></script>
+
+<script type = "" src = "ui/js/controllers/homeController.js"></script>
+<script type = "" src = "ui/js/factories/homeFactory.js"></script>
+<script type = "" src = "ui/js/app.js"></script>
+
 </html>
