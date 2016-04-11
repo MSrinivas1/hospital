@@ -1,8 +1,17 @@
 /*
  * user script written srinivas  
  */
-var hosp = angular.module('hosp',['hosp.homeController']);
-	hosp.component('home', {
-	  template:'template/home-tmpl.html',
-	  $routeConfig:"HomeController"
+var hosp = angular.module('hosp',[
+                                  'ngRoute',
+                                  'hosp.homeController'])
+
+hosp.config(function($routeProvider){
+	$routeProvider
+	.when('/home',{
+		templateUrl:'ui/template/home-tmpl.html',
+		controller:'HomeController'
+	})
+	.otherwise({
+		templateUrl:'ui/template/home-tmpl.html'
 	});
+});
