@@ -28,9 +28,9 @@
 	    <script src="ui/js/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
 	    <script src="ui/js/lib/async.js"></script>
 	
+		<script src = "ui/js/app.js"></script>
 		<script src = "ui/js/controllers/homeController.js"></script>
 		<script src = "ui/js/factories/homeFactory.js"></script>
-		<script src = "ui/js/app.js"></script>
 	</head>
 	<body>
 	    <div class="container">
