@@ -1,0 +1,29 @@
+<div>
+welcome to home page
+
+	<div class="container" ng-controller ='HomeController' class="col-md-7 col-sm-10">
+	<form action="#" role="form" class="form-horizontal form-group">
+		<div class="col-md-8 col-sm-10">
+			<input class ="form-control" ng-model="person.name" type="text" placeholder="Enter Name"/>
+		</div>
+		<div class="col-md-8 col-sm-10 ">
+			<input  class ="form-control" ng-model="person.email" type="text" placeholder="Enter Email"/>
+		</div>
+		<div class="col-md-8 col-sm-10">
+			<input ng-model="person.phone" class ="form-control" type="text" placeholder="Enter Phone Number"/>
+		</div>
+		<div class="col-md-8 col-sm-10">
+			<input ng-model="person.age" type="text"  class ="form-control"  placeholder="Enter Age"/>
+		</div>
+		
+		<div class="col-md-8 col-sm-10">
+			<input ng-model="person.salary" type="text" class ="form-control" placeholder="Enter salary"/>
+		</div>
+		
+		<div class="col-md-8 col-sm-10">
+			<button type="submit" class ="btn btn-success" ng-click="savePerson()"> submit </button>
+			<button type="submit" class ="btn btn-warning" ng-click="resetPerson()"> reset </button>
+		</div>
+	</div>
+	</form>
+</div>
